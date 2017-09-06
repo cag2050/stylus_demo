@@ -27,12 +27,13 @@ color(args)
 fontSize(args)
     font-size args
 
-colors= red, blue, orange, yellow
-fonts= 20px 30px 40px 20px
+$colors= red blue orange yellow
+$fonts= 20px 30px 40px 20px
+$li_length = 3
 
 ul.iterator3
-    for index in 0 1 2 3
-      li:nth-child({index})
-        color(colors[index])
-        fontSize(fonts[index])
+    for index in (0..$li_length)
+        li:nth-child({index+1})
+            color($colors[index])
+            fontSize($fonts[index])
 </style>
