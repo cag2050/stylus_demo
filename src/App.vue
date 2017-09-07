@@ -4,6 +4,7 @@
     路由列表：<br/>
     <router-link to='/'>iterator1</router-link><br/>
     <router-link to='/iterator2'>iterator2</router-link><br/>
+    <router-link to='/iterator3'>iterator3</router-link><br/>
     <router-link to='/hello'>hello页面</router-link><br/>
     <div>============以下是内容=============</div>
     <router-view></router-view>
