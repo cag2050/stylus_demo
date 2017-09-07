@@ -1,6 +1,6 @@
 <template lang='pug'>
 div
-    div 为每个li下的超链接a设置不同的样式(数组中包含对象)
+    div 为每个li下的超链接a设置不同的样式(stylus数组中包含对象)
     ul.iterator
         li
             a li1
