@@ -1,7 +1,7 @@
 <template lang='pug'>
 <div>
     <div>为每个li设置不同的样式(数组中包含对象)</div>
-    <ul class='iterator3'>
+    <ul class='iterator'>
       <li>li1</li>
       <li>li2</li>
       <li>li3</li>
@@ -22,9 +22,9 @@ export default {
 </script>
 
 <style lang='stylus'>
-items = ({'left':10px,'top':10px}) ({'left':20px,'top':20px}) ({'left':30px,'top':30px}) ({'left':40px,'top':40px})
+items = ({'font-size': 10px, 'left': 10px, 'top': 10px}) ({'font-size': 20px, 'left': 20px, 'top': 20px}) ({'font-size': 30px, 'left': 30px, 'top': 30px}) ({'font-size': 10px, 'left': 40px, 'top': 40px})
 
-ul.iterator3
+ul.iterator
     for item, index in items
         li:nth-child({index+1})
             for name, value in item
