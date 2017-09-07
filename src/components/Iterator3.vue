@@ -1,6 +1,6 @@
 <template lang='pug'>
 <div>
-    <div>为每个li设置不同的颜色、字体大小(测试是否支持二级数组)</div>
+    <div>为每个li设置不同的样式(数组中包含对象)</div>
     <ul class='iterator3'>
       <li>li1</li>
       <li>li2</li>
@@ -22,20 +22,11 @@ export default {
 </script>
 
 <style lang='stylus'>
-color(args)
-    color args
-fontSize(args)
-    font-size args
-
-$colors= red blue orange yellow
-$fonts= 20px 30px 40px 20px
-$options = (red blue orange yellow) (20px 30px 40px 20px)
-$li_length = 3
+items = ({'left':10px,'top':10px}) ({'left':20px,'top':20px}) ({'left':30px,'top':30px}) ({'left':40px,'top':40px})
 
 ul.iterator3
-    for index in (0..$li_length)
+    for item, index in items
         li:nth-child({index+1})
-            // color($colors[index])
-            color($options[index])
-            fontSize($fonts[index])
+            for name, value in item
+                {name} value
 </style>
