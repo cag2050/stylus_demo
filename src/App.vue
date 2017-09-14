@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png"><br/>
     路由列表：<br/>
     <router-link to='/'>iterator</router-link><br/>
     <router-link to='/hello'>hello页面</router-link><br/>
