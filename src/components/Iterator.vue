@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang='stylus'>
-items = ({font-size: 10px, left: 10px, top: 10px}) ({font-size: 20px, left: 20px, top: 20px}) ({font-size: 30px, left: 30px, top: 30px}) ({font-size: 10px, left: 40px, top: 40px})
+items = {font-size: 10px, left: 10px, top: 10px} {font-size: 20px, left: 20px, top: 20px} {font-size: 30px, left: 30px, top: 30px} {font-size: 10px, left: 40px, top: 40px}
 
 ul.iterator
     for item, index in items
